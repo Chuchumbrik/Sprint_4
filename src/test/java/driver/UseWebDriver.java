@@ -11,14 +11,14 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class UseWebDriver {
     protected WebDriver driver;
-
+    private final String urlHomaPage = "https://qa-scooter.praktikum-services.ru/";
     @Before
     public void startUp() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(options);
-        driver.get("https://qa-scooter.praktikum-services.ru/");
+        driver.get(urlHomaPage);
     }
 
 //    @Before

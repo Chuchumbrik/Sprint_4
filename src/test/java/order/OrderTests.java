@@ -4,8 +4,8 @@ import driver.UseWebDriver;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pageObject.HomePageScooter;
-import pageObject.OrderPageScooter;
+import pages.HomePageScooter;
+import pages.OrderPageScooter;
 
 import java.util.Objects;
 

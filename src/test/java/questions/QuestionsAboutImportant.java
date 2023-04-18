@@ -1,11 +1,11 @@
-package questionAboutImportant;
+package questions;
 
 import driver.UseWebDriver;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import pageObject.HomePageScooter;
+import pages.HomePageScooter;
 
 @RunWith(Parameterized.class)
 public class QuestionsAboutImportant extends UseWebDriver {

@@ -1,4 +1,4 @@
-package pageObject;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -53,15 +53,15 @@ public class HomePageScooter {
         return getAccordionItem(questionHeader).findElement(accordionPanel);
     }
     public String getAccordionText(String questionHeader) {
-        WebElement wElemI = getAccordionItem(questionHeader);
+        WebElement accordionItem = getAccordionItem(questionHeader);
 
-        scrollToElement(driver, wElemI);
-        waitVisibilityOfElement(driver, wElemI);
+        scrollToElement(driver, accordionItem);
+        waitVisibilityOfElement(driver, accordionItem);
 
-        wElemI.click();
-        WebElement wElemP = getAccordionPanel(questionHeader);
-        waitVisibilityOfElement(driver, wElemP);
-        return wElemP.getText();
+        accordionItem.click();
+        WebElement accordionPanel = getAccordionPanel(questionHeader);
+        waitVisibilityOfElement(driver, accordionPanel);
+        return accordionPanel.getText();
     }
 
 }
